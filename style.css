@@ -3,7 +3,9 @@
 }
 body{
     background-color: #E5E5E5;
+    height: 1800px;
 }
+/*cabecalho*/
 .header{
     background-color: #CF2B2B;
     height: 92px;
@@ -29,4 +31,29 @@ body{
     line-height: 21px;
     color: white;
     margin-bottom: auto;
+}
+/*rodape*/
+.footer{
+    height: 92px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer div {
+    padding-top: 8px;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
 }
