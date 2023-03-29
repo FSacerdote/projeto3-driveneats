@@ -3,7 +3,6 @@
 }
 body{
     background-color: #E5E5E5;
-    height: 1800px;
 }
 /*cabecalho*/
 .header{
@@ -32,6 +31,60 @@ body{
     color: white;
     margin-bottom: auto;
 }
+/*opções*/
+.main{
+    margin-top: 65px;
+    padding-top: 31px;
+    padding-left: 19px;
+    margin-bottom: 108px;
+}
+.menu{
+    margin-top: 27px;
+}
+.menu p{
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+}
+.opcoes{
+    overflow: scroll;
+    display: flex;
+    gap: 0px 16px;
+}
+.item {
+    margin-top: 17px;
+    width: 172px;
+    height: 216px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    padding: 18px 14px 0 14px;
+}
+.item img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.item p{
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.item p:nth-child(3){
+    margin-top: 4px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.item p:last-child{
+    margin-top: 5px;
+    font-weight: 400;
+}
+
 /*rodape*/
 .footer{
     height: 92px;
@@ -44,8 +97,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.footer div {
-    padding-top: 8px;
+.footer button {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -56,4 +108,5 @@ body{
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+    border: none;
 }
