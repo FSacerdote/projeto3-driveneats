@@ -106,7 +106,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.footer button {
+button {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -126,4 +126,7 @@ body{
 }
 .aparece{
     display: block;
+}
+.botaoLigado{
+    background: #32B72F;
 }
