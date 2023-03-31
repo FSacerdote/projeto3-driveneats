@@ -128,5 +128,6 @@ button {
     display: block;
 }
 .botaoLigado{
+    cursor: pointer;
     background: #32B72F;
 }
