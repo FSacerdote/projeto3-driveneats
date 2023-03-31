@@ -124,10 +124,77 @@ button {
 .selecionado{
     box-shadow: inset 0px 0px 0px 5px #32B72F;
 }
-.aparece{
-    display: block;
-}
 .botaoLigado{
     cursor: pointer;
     background: #32B72F;
+}
+.fundoBranco{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.menuFinal{
+    margin: auto auto;
+    height: 353px;
+    width: 377px;
+    background-color: #50D074;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+    padding: 21px 24px;
+}
+.menuFinal h1{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+.aparece{
+    display: flex;
+}
+.menuFinal button{
+    height: 52px;
+    width: 333px;
+}
+.menuFinal button:hover{
+    cursor: pointer;
+}
+.menuFinal button:nth-child(6){
+    margin-top: 11px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #50D074;
+    background-color: white;
+}
+.menuFinal button:nth-child(7){
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+.menuFinal div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+.menuFinal p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+}
+.conta p{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }

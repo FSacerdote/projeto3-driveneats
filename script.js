@@ -14,7 +14,7 @@ function seleciona(elemento, pai){
 }
 
 function ligaBotao(){
-    let botao = document.querySelector("button")
+    let botao = document.querySelector(".botaoPrincipal")
     let link = document.querySelector("a");
     botao.innerHTML = "Fechar Pedido";
     botao.classList.add("botaoLigado");
@@ -31,5 +31,21 @@ function fechaPedido(){
     const precoSobremesa = (sobremesa.querySelector(".preco").innerHTML).replace("R$ ", "").replace(",", ".");
     const total = (Number(precoBebida) + Number(precoPrato) + Number(precoSobremesa)).toFixed(2);
     const mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato.querySelector("p").innerHTML}\n- Bebida: ${bebida.querySelector("p").innerHTML}\n- Sobremesa: ${sobremesa.querySelector("p").innerHTML}\nTotal: R$ ${total.replace(".",",")}`;  
-    window.open("https://wa.me/5519992926745?text=" + encodeURIComponent(mensagem));
+    const telaBranca = document.querySelector(".fundoBranco");
+    telaBranca.classList.add("aparece");
+    (telaBranca.querySelector(".total")).innerHTML = total.replace(".",",");
+    (telaBranca.querySelector(".prato-final")).innerHTML = prato.querySelector("p").innerHTML;
+    (telaBranca.querySelector(".preco-prato")).innerHTML = precoPrato.replace(".", ",");
+    (telaBranca.querySelector(".bebida-final")).innerHTML = bebida.querySelector("p").innerHTML;
+    (telaBranca.querySelector(".preco-bebida")).innerHTML = precoBebida.replace(".", ",");
+    (telaBranca.querySelector(".sobremesa-final")).innerHTML = sobremesa.querySelector("p").innerHTML;
+    (telaBranca.querySelector(".preco-sobremesa")).innerHTML = precoSobremesa.replace(".", ",");
 }
+function cancela(){
+    const telaBranca = document.querySelector(".fundoBranco");
+    telaBranca.classList.remove("aparece");
+}
+function confirma(){
+
+}
+// window.open("https://wa.me/5519992926745?text=" + encodeURIComponent(mensagem));

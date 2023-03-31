@@ -15,6 +15,29 @@
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="fundoBranco">
+        <div class="menuFinal">
+            <h1>Confirme seu pedido</h1>
+            <div>
+                <p class="prato-final"></p>
+                <p class="preco-prato"></p>
+            </div>
+            <div>
+                <p class="bebida-final"></p>
+                <p class="preco-bebida"></p>
+            </div>
+            <div>
+                <p class="sobremesa-final"></p>
+                <p class="preco-sobremesa"></p>
+            </div>
+            <div class="conta">
+                <p>TOTAL</p>
+                <p class="total"></p>
+            </div>
+            <button>Tudo certo, pode pedir!</button>
+            <button onclick="cancela()">Cancelar</button>
+        </div>
+    </div>
     <div class="header">
         <h1>DrivenEats</h1>
         <p>Sua comida em 6 minutos</p>
@@ -118,7 +141,7 @@
         </div>
     </div>
     <div class="footer">
-        <button onclick="fechaPedido()" disabled>Selecione os 3 itens <br> para fechar o pedido</button>
+        <button class="botaoPrincipal" onclick="fechaPedido()" disabled>Selecione os 3 itens <br> para fechar o pedido</button>
     </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
