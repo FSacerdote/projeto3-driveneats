@@ -46,7 +46,7 @@ function cancela(){
 }
 function confirma(){
     const nome = prompt("Informe seu nome");
-    const endereco = prompt("Informe seu endereco");
+    const endereco = prompt("Informe seu endereço");
     mensagem += `\n\nNome: ${nome}\nEndereço: ${endereco}`;
     window.open("https://wa.me/5519992926745?text=" + encodeURIComponent(mensagem));
 }
