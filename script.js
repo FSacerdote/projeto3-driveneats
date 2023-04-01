@@ -39,15 +39,15 @@ function fechaPedido(){
     (telaBranca.querySelector(".preco-bebida")).innerHTML = precoBebida.replace(".", ",");
     (telaBranca.querySelector(".sobremesa-final")).innerHTML = sobremesa.querySelector("p").innerHTML;
     (telaBranca.querySelector(".preco-sobremesa")).innerHTML = precoSobremesa.replace(".", ",");
-    const nome = prompt("Informe seu nome");
-    const endereco = prompt("Informe seu endereco");
-    mensagem += `\n\n Nome: ${nome}\nEndereço: ${endereco}`;
 }
 function cancela(){
     const telaBranca = document.querySelector(".fundoBranco");
     telaBranca.classList.remove("aparece");
 }
 function confirma(){
+    const nome = prompt("Informe seu nome");
+    const endereco = prompt("Informe seu endereco");
+    mensagem += `\n\nNome: ${nome}\nEndereço: ${endereco}`;
     window.open("https://wa.me/5519992926745?text=" + encodeURIComponent(mensagem));
 }
 
